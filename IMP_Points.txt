@@ -4,3 +4,6 @@ Database is always in another continent, so always use async/await
 assignment- log the connectionInstance
 
 js projects - https://stackblitz.com/edit/dom-project-chaiaurcode?file=index.html
+
+read node.js api error class
+assignment -  this.data = ?
