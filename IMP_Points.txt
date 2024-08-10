@@ -7,3 +7,5 @@ js projects - https://stackblitz.com/edit/dom-project-chaiaurcode?file=index.htm
 
 read node.js api error class
 assignment -  this.data = ?
+
+filename can be changed in your way on temporary server before uploading it to cloudinary
