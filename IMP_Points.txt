@@ -13,3 +13,10 @@ filename can be changed in your way on temporary server before uploading it to c
 URL = Uniform Resource Locator
 URI - Uniform Resource Identifier
 URN - Uniform Resource Name
+
+difference export and export default???
+difference btw import {upload} from ... and import upload from ... ???
+
+some method in JS??
+
+console.log(req.files) ?????????
