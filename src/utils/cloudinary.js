@@ -3,9 +3,9 @@ import fs from 'fs';
 
  // Configuration
  cloudinary.config({ 
-    cloud_name: process_params.env.CLOUDINARY_CLOUD_NAME, 
-    api_key: process_params.env.CLOUDINARY_API_KEY, 
-    api_secret: process_params.env.CLOUDINARY_API_SECRET 
+    cloud_name: process.env.CLOUDINARY_CLOUD_NAME, 
+    api_key: process.env.CLOUDINARY_API_KEY, 
+    api_secret: process.env.CLOUDINARY_API_SECRET 
  });
 
 const uploadOnCloudinary = async (localFilePath) => {
@@ -16,7 +16,9 @@ const uploadOnCloudinary = async (localFilePath) => {
              resource_type: "auto",
          });
 
-         console.log("Uploadresult : ", uploadResult.url);
+         //  console.log("Uploadresult : ", uploadResult.url);
+        //  delete image from local memory after uploading them on cloudinary
+         fs.unlinkSync(localFilePath);
          return uploadResult;
      } catch (error) {
          fs.unlinkSync(localFilePath) // remove the locally saved temporary file as the upload operation failed
